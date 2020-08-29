@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+  int sum=0,sumf=0;
+  int h,a,n,mean;
+  cout<<"enter how many mid values n frequency you would you like to enter to find its mean";
+  cin>>n;
+  int midv[n],devtv[n],multiply[n],fre[n];
+  cout<<" enter mid values  and its frequency for mean by short cut method";
+  if(n%2==0)
+     {
+      a=n/2;
+     }
+  else
+     {
+      a=(n+1)/2;
+     }
+  for(int i=0;i<n;i++)
+     {
+      cin>>midv[i];
+      cin>>fre[i];
+      sumf=sumf+fre[i];
+     }
+  
+  cout<<"enter class size of class intervals";
+  cin>>h;
+  for(int i=0;i<n;i++)
+     {
+       devtv[i]=midv[i]-midv[a];
+       multiply[i]=devtv[i]*fre[i];
+       sum=multiply[i]+sum;
+     }
+  mean=midv[a]+(sum/sumf)*h;
+  cout<<"mean ="<<mean;
+    return 0;
+}
