@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+ {
+     int z=4;
+     int f=4;
+     for(int x=4;x>=1;x--)
+      {
+        printf("❤️");
+        for( int y=z;y>=1;y--)
+         {
+           printf(" ");
+         }
+        z--; 
+        printf("❤️");
+        printf("\n");
+      }
+    for(int x=4;x>1;x--)
+      {
+        printf("❤️");
+        for( int y=f;y<6;y++)
+        {
+          printf(" ");
+        }
+        f--; 
+        printf("❤️");
+        printf("\n");
+     
+      }
+}
