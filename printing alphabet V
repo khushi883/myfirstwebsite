@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+ int x,z=1,n=7;
+ for(x=1;x<=5;x++)
+ {
+     for(int y=z;y>=1;y--)
+     {
+         printf(" ");
+         
+     }
+     z++;
+     printf("v");
+     for(int q=n;q>=1;q--)
+     {
+         printf(" ");
+         
+     }
+     n=n-2;
+     
+     if(x==5)
+      {
+          break;
+      }
+      
+      printf("v");
+      
+      printf("\n");
+ }
+    return 0;
+}
